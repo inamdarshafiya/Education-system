@@ -1,0 +1,47 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+
+.home h1{
+    font-size: 6rem;
+    color:#666;
+}
+
+.home p{
+    font-size: 1.9rem;
+    color:#999;
+    padding:1rem 0;
+    width:70rem;
+}
+
+.home .shape{
+    position: absolute;
+    bottom:-.2rem; left: 0;
+    height:15rem;
+    width:100%;
+    background:url(../images/shape.png);
+    block-size: 100rem 15rem;
+    filter: drop-shadow(0 -.1rem .1rem rgba(0,0,0,.2));
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+
+    0%{
+        background-position-x: 0rem;
+    }
+
+    100%{
+        background-position-x: 100rem;
+    }
+
+}
